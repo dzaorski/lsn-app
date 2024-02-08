@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 
 import static java.util.Comparator.naturalOrder;
 
-public class Output {
+public class Result {
 
     private final TreeSet<Integer> sorted;
     private final Integer count;
@@ -13,7 +13,7 @@ public class Output {
     private final Integer min;
     private final Integer max;
 
-    public Output(List<Integer> input) {
+    public Result(List<Integer> input) {
         sorted = new TreeSet<>(input);
         count = input.size();
         distinct = sorted.size();

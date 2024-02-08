@@ -14,7 +14,7 @@ public class Task1 {
         while (scanner.hasNextInt()) {
             input.add(scanner.nextInt());
         }
-        var output = new Output(input);
-        out.println(output);
+        var result = new Result(input);
+        out.println(result);
     }
 }
