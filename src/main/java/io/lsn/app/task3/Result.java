@@ -11,6 +11,10 @@ public class Result {
     private final ArrayList<Graph> graphs = new ArrayList<>();
 
     public Result(List<Pair> input) {
+        populate(input);
+    }
+
+    private void populate(List<Pair> input) {
         Graph current = new Graph();
         current.addPair(input.get(0));
         graphs.add(current);

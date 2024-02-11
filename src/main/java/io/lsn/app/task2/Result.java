@@ -13,6 +13,10 @@ public class Result {
     private final ArrayList<Pair> pairs = new ArrayList<>();
 
     public Result(List<Integer> input) {
+        populate(input);
+    }
+
+    private void populate(List<Integer> input) {
         IntStream.range(0, input.size())
                 .forEach(i -> IntStream.range(0, input.size())
                         .filter(j -> i > j && input.get(i) + input.get(j) == SUM)
