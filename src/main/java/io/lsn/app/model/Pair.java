@@ -1,4 +1,4 @@
-package io.lsn.app.task2;
+package io.lsn.app.model;
 
 public class Pair implements Comparable<Pair> {
 
@@ -8,6 +8,14 @@ public class Pair implements Comparable<Pair> {
     public Pair(int first, int second) {
         this.first = first < second ? first : second;
         this.second = first < second ? second : first;
+    }
+
+    public int getFirst() {
+        return first;
+    }
+
+    public int getSecond() {
+        return second;
     }
 
     @Override

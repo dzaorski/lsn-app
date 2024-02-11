@@ -1,7 +1,8 @@
 package io.lsn.app.task2;
 
+import io.lsn.app.model.Pair;
+
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
